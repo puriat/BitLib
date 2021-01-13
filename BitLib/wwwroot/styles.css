@@ -1,0 +1,88 @@
+﻿/*
+    This file is to show how CSS and other static resources (such as images) can be
+    used from a library project/package.
+*/
+
+.bit-button-theme-primary {
+    border: 1px solid rgb(0, 120, 212);
+    background-color: rgb(0, 120, 212);
+    color: rgb(255, 255, 255);
+}
+
+    .bit-button-theme-primary:hover {
+        background-color: rgb(16, 110, 190);
+        border: 1px solid rgb(16, 110, 190);
+        color: rgb(255, 255, 255);
+    }
+
+.bit-button-theme-standard {
+    border: 1px solid rgb(138, 136, 134);
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 49, 48);
+}
+
+    .bit-button-theme-standard:hover {
+        background-color: rgb(243, 242, 241);
+        color: rgb(32, 31, 30);
+    }
+
+.bit-button {
+    outline: transparent none medium;
+    position: relative;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 12px;
+    border-radius: 2px;
+    height: 32px;
+    user-select: none;
+}
+
+.bit-button-secondary-text-addition {
+    min-height: 72px;
+}
+
+.bit-button-text-container {
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.bit-button-secondary-text {
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    color: rgb(96, 94, 92);
+}
+
+.bit-button-secondary-text-primary {
+    color: white;
+}
+
+.bit-button-disabled {
+    background: rgb(243, 242, 241);
+    border-color: rgb(243, 242, 241);
+    color: rgb(161, 159, 157);
+    cursor: no-drop;
+}
+
+    .bit-button-disabled:hover {
+        background: rgb(243, 242, 241);
+        border-color: rgb(243, 242, 241);
+        color: rgb(161, 159, 157);
+    }
+
+.bit-button-secondary-text-disabled {
+    color: rgb(161, 159, 157);
+}

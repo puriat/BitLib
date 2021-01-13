@@ -1,0 +1,33 @@
+﻿@page "/"
+
+<BitButton Text="Standard" OnClick="StandardClicked"></BitButton>
+<BitButton Text="Primary" OnClick="PrimaryClicked" ButtonTheme="@ButtonTheme.Primary"></BitButton>
+
+
+<BitButton Text="Standard with sub" SecondaryText="This is the secondary text" OnClick="PrimarySecondaryClicked"/>
+<BitButton Text="Primary with sub" SecondaryText="This is the secondary text" ButtonTheme="@ButtonTheme.Primary" OnClick="PrimarySecondaryClicked" />
+
+<BitButton Text="Primary with sub" SecondaryText="This is the secondary text" Disabled="true" ButtonTheme="@ButtonTheme.Primary" OnClick="PrimarySecondaryClicked" />
+
+@buttonName Clicked
+
+@code
+{
+    private string buttonName = "------";
+
+    private void StandardClicked(MouseEventArgs e)
+    {
+        buttonName = "Standard";
+    }
+
+    private void PrimaryClicked(MouseEventArgs e)
+    {
+        buttonName = "Primary";
+    }
+
+    private void PrimarySecondaryClicked(MouseEventArgs e)
+    {
+        buttonName = "Primary With Secondary";
+    }
+
+}

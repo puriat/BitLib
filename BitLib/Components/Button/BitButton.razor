@@ -1,0 +1,12 @@
+﻿@inherits BaseBitDomComponent
+
+<div class="@ClassMapper.AsString()" @onclick="OnClickHandler">
+    <div class="bit-button-text-container">
+        <span>
+            @Text
+        </span>
+        <span class="@SecondaryTextClassMapper.AsString()">
+            @SecondaryText
+        </span>
+    </div>
+</div>

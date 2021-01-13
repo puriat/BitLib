@@ -1,0 +1,10 @@
+﻿@namespace BitLib
+@using Microsoft.AspNetCore.Components
+@inherits BaseBitThemeProvider;
+
+
+@((MarkupString)Theme?.GetStyleTag())
+
+<CascadingValue Value="@Theme">
+    @ChildContent
+</CascadingValue>
